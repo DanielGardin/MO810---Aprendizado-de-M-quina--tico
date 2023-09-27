@@ -1,0 +1,1 @@
+/*! Copyright 2022 Google LLC. All Rights Reserved. Licensed under the Apache License, Version 2.0 (http://www.apache.org/licenses/LICENSE-2.0) */for(icon of document.getElementsByClassName("expand-more"))icon.addEventListener("click",e=>{e.currentTarget.parentElement.parentElement.classList.toggle("open")});

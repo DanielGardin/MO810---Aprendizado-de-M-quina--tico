@@ -1,0 +1,356 @@
+@import"https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Roboto+Mono:wght@300;400;500&display=swap";.datacard-wrapper {
+    max-width: 100%;
+    display: flex;
+    justify-content: center
+}
+
+.datacard {
+    border: solid 1px #cddcdc;
+    background: #f1f7f7;
+    width: 100%;
+    max-width: 100vw;
+    position: relative;
+    padding: 10px;
+    box-shadow: 1px 2px 2px 0px rgba(0,0,0,.2);
+    overflow: hidden;
+    font-family: Inter,Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    color: #152d2e;
+    overflow: scroll;
+    scroll-behavior: smooth
+}
+
+.datacard a,.datacard abbr,.datacard acronym,.datacard address,.datacard applet,.datacard article,.datacard aside,.datacard audio,.datacard big,.datacard blockquote,.datacard body,.datacard canvas,.datacard caption,.datacard center,.datacard cite,.datacard code,.datacard dd,.datacard del,.datacard details,.datacard dfn,.datacard div,.datacard dl,.datacard dt,.datacard em,.datacard embed,.datacard fieldset,.datacard figcaption,.datacard figure,.datacard footer,.datacard form,.datacard h1,.datacard h2,.datacard h3,.datacard h4,.datacard h5,.datacard h6,.datacard header,.datacard hgroup,.datacard html,.datacard iframe,.datacard img,.datacard ins,.datacard kbd,.datacard label,.datacard legend,.datacard li,.datacard mark,.datacard menu,.datacard nav,.datacard object,.datacard ol,.datacard output,.datacard p,.datacard pre,.datacard q,.datacard ruby,.datacard s,.datacard samp,.datacard section,.datacard small,.datacard span,.datacard strike,.datacard strong,.datacard sub,.datacard summary,.datacard sup,.datacard table,.datacard tbody,.datacard td,.datacard tfoot,.datacard th,.datacard thead,.datacard time,.datacard tr,.datacard tt,.datacard u,.datacard ul,.datacard var,.datacard video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline
+}
+
+.datacard p {
+    text-transform: none;
+    margin: 0 0 10px 0
+}
+
+.datacard a {
+    text-decoration: none;
+    border-bottom: 1px solid #152d2e
+}
+
+.datacard em,.datacard i {
+    font-style: italic
+}
+
+.datacard strong,.datacard b {
+    font-weight: 500
+}
+
+.datacard ol,.datacard ul {
+    padding: 0;
+    margin: 0 0 10px 20px
+}
+
+.datacard .code-wrapper,.datacard .table-wrapper {
+    border-radius: 5px;
+    border: 1px solid #cddcdc;
+    margin-bottom: 10px;
+    max-height: 500px;
+    overflow: scroll
+}
+
+.datacard .code-wrapper .toolbar,.datacard .table-wrapper .toolbar {
+    padding: 5px 5px 0 0;
+    display: flex;
+    justify-content: end
+}
+
+.datacard .code-wrapper {
+    background: #f1f7f7
+}
+
+.datacard .table-wrapper {
+    background: #fff
+}
+
+.datacard pre {
+    background: #f1f7f7;
+    border-radius: 5px;
+    padding: 8px;
+    margin: 0;
+    width: 100%;
+    overflow: scroll
+}
+
+.datacard code {
+    font-family: Roboto Mono,sans-serif;
+    background: #f1f7f7;
+    border-radius: 2px;
+    padding: 2px;
+    color: #152d2e;
+    font-size: 12px;
+    line-height: 20px
+}
+
+.datacard table {
+    display: inline-block;
+    overflow: auto;
+    width: 100%;
+    font-size: 14px;
+    line-height: 20px
+}
+
+.datacard tfoot,.datacard thead,.datacard tr {
+    background: none;
+    padding: 10px
+}
+
+.datacard th {
+    background: none;
+    text-align: left;
+    font-weight: 500;
+    padding: 10px
+}
+
+.datacard td,.datacard tfoot {
+    background: none;
+    text-align: left;
+    padding: 10px;
+    border-top: #f1f7f7 1px solid
+}
+
+.datacard thead {
+    font-weight: 500
+}
+
+.datacard tr {
+    overflow-x: scroll
+}
+
+.datacard .icon-wrapper {
+    width: 24px;
+    height: 24px;
+    transition: all .5s ease-out
+}
+
+.datacard .icon-wrapper:focus,.datacard .icon-wrapper:hover {
+    cursor: pointer
+}
+
+.datacard .tooltip {
+    height: 0;
+    display: inline
+}
+
+.datacard .tooltip .tooltip-icon {
+    margin: 0 4px 4px 0
+}
+
+.datacard .tooltip .tooltip-text {
+    position: absolute;
+    max-width: 240px;
+    height: 0;
+    width: 0;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 1px 2px 2px 0px rgba(0,0,0,.2);
+    background: #152d2e;
+    color: #f1f7f7;
+    display: inline-flex
+}
+
+@media screen and (max-width: 600px) {
+    .datacard .tooltip .tooltip-text {
+        display:block
+    }
+}
+
+.datacard .tooltip:focus .tooltip-text,.datacard .tooltip:hover .tooltip-text {
+    height: max-content;
+    width: max-content;
+    padding: 5px 10px
+}
+
+.datacard .card-error {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.datacard .card-error p {
+    font-family: Roboto Mono,Helvetica,Arial,sans-serif;
+    color: #3c4f50;
+    font-size: 16px;
+    line-height: 24px
+}
+
+.datacard .card-subsection-title {
+    padding: 5px 0 5px 0;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    border-top: 1px solid #cddcdc;
+    color: #1a73e8;
+    text-transform: none
+}
+
+.datacard .card-field-title {
+    font-size: 12px;
+    font-weight: 500;
+    margin: 0 24px 5px 0;
+    line-height: 18px;
+    color: #0748a2;
+    display: inline-block;
+    text-transform: uppercase
+}
+
+.datacard .card-summary {
+    border-radius: 5px 5px 0 0;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    min-height: 0
+}
+
+.datacard .card-summary .datacard-title {
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 400;
+    text-transform: none;
+    color: #152d2e;
+    margin: 0
+}
+
+.datacard .card-summary .datacard-header {
+    background: #fff;
+    padding: 20px;
+    display: flex;
+    gap: 20px
+}
+
+@media screen and (max-width: 600px) {
+    .datacard .card-summary {
+        display:block
+    }
+}
+
+.datacard .card-section {
+    padding: 10px;
+    border-radius: 5px;
+    min-height: 0
+}
+
+.datacard .card-section-top {
+    display: flex;
+    justify-content: space-between
+}
+
+.datacard .card-section-title {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 30px;
+    margin: 0;
+    color: #152d2e;
+    display: inline;
+    text-transform: none;
+    text-align: left;
+    width: max-content
+}
+
+.datacard .card-section-title-wrapper {
+    display: inline
+}
+
+.datacard .card-section-body {
+    height: 0;
+    overflow: hidden;
+    border-bottom: 2px solid #cddcdc
+}
+
+.datacard .card-field-wrapper {
+    border-top: 1px solid #cddcdc;
+    background: #fff;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 10px
+}
+
+.datacard .card-field-wrapper .card-field {
+    overflow: hidden;
+    overflow-wrap: break-word;
+    grid-column: span 3
+}
+
+.datacard .card-field-wrapper .card-field.full {
+    grid-column: 1/13
+}
+
+.datacard .card-field-wrapper .card-field.half {
+    grid-column: span 6
+}
+
+.datacard .card-field-wrapper .card-field.telescope {
+    grid-column: 1/5
+}
+
+.datacard .card-field-wrapper .card-field.periscope {
+    grid-column: 5/9
+}
+
+.datacard .card-field-wrapper .card-field.microscope {
+    grid-column: 9/13
+}
+
+.datacard .card-field-wrapper .card-field.telescope.full {
+    grid-column: 1/13
+}
+
+.datacard .card-field-wrapper .card-field.periscope.full {
+    grid-column: 5/13
+}
+
+@media screen and (max-width: 600px) {
+    .datacard .card-field-wrapper {
+        display:block
+    }
+
+    .datacard .card-field-wrapper .card-field {
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #cddcdc
+    }
+}
+
+.card-section.active,.card-summary.active {
+    background: #ffecea;
+    border: 1px solid #ffcfcc
+}
+
+.card-section.active .card-section-title,.card-summary.active .card-section-title {
+    color: #ff675c;
+    border-color: #ffcfcc
+}
+
+.card-section.active .card-subsection-title,.card-section.active .card-field-title,.card-summary.active .card-subsection-title,.card-summary.active .card-field-title {
+    color: #3c4f50;
+    border-color: #ffcfcc
+}
+
+.card-section.active .card-field-wrapper,.card-summary.active .card-field-wrapper {
+    border-color: #ffcfcc
+}
+
+.card-section.open .icon-wrapper.expand-more {
+    transform: rotate(180deg);
+    transition: all .5s ease-out
+}
+
+.card-section.open .card-section-body {
+    height: max-content
+}
